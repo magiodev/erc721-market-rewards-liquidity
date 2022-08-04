@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const hre = require('hardhat')
-const chainId = process.env.VUE_APP_DEPLOY_CONTRACT_HARDHAT_CHAINID
+const chainId = process.env.DEPLOY_CONTRACT_HARDHAT_CHAINID
 
 const deployer = {
   async logDeployer() {

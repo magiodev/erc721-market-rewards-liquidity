@@ -5,7 +5,7 @@ const hre = require('hardhat')
 // after the run, find the ABIs and addresses in frontend/src/contracts
 const contracts = [
   {
-    name: "NFT", // names only, no .sol extension
+    name: "CronosShaggyGalaxy", // names only, no .sol extension
     constructor: [
       "https://arweave.net/6KcPnNp9fPOtu8_9JIEL5puFSY4bucdIp8PlX97Wtpg/", // https://arweave.net/3GIvdy-dVV_mmCfFr-TvSPaMtAD7oZHYOJW_i8zIdMA/
       '150000000000000000000', // in gwei (1000000000000000000 = 1 ETH/MATIC/CRO/{CoinSymbol})
@@ -17,7 +17,7 @@ const contracts = [
     ethernal: false // if using ethernal as private rpc explorer (for hardhat/ganache)
   },
   {
-    name: "FungibleUtility", // names only, no .sol extension
+    name: "CombToken", // names only, no .sol extension
     constructor: {
       name: 'NFT' // THIS INJECTS this contractNameAddress as parameter
     },
@@ -26,7 +26,7 @@ const contracts = [
     ethernal: false // if using ethernal as private rpc explorer (for hardhat/ganache)
   },
   {
-    name: "FungibleUtilityLP", // names only, no .sol extension
+    name: "CombTokenLP", // names only, no .sol extension
     constructor: [],
     path: '',
     libraries: [],
@@ -35,7 +35,7 @@ const contracts = [
   {
     name: "MarketplaceRoyalties", // names only, no .sol extension
     constructor: {
-      name: 'NFT' // THIS INJECTS this contractNameAddress as parameter
+      name: 'CronosShaggyGalaxy' // THIS INJECTS this contractNameAddress as parameter
     },
     path: '',
     libraries: [],
